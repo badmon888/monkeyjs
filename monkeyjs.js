@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         切片网展示工具 手改
+// @name         采集资源展示脚本
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  将符合链接规则的网站转换成展示视频卡片的形式
 // @author       zdf
 // @match        *://*/provide/vod/*
