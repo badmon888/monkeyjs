@@ -185,7 +185,7 @@ function 单转双pid(list, key) {
 function 跳转(str) {
   const 跳转 = $('hiker://empty##fypage').rule(
     (lp, str) => {
-      if(!fileExist(lp+"海阔采集站.js")){
+      if(fileExist(lp+"海阔采集站.js")){
         file=lp+"海阔采集站.js";
       }else{
         file="https://v4.gh-proxy.org/https://raw.githubusercontent.com/badmon888/monkeyjs/refs/heads/main/%E6%B5%B7%E9%98%94%E9%87%87%E9%9B%86%E7%AB%99.js";
