@@ -296,7 +296,7 @@ function 显示网站列表(url) {
   
   mj=JSON.parse(fetch(url));
   if(!fileExist(localPath+"caiji_hk.json")){
-    write(localPath+"caiji_hk.json",JSON.stringify(mj));
+    writeFile(localPath+"caiji_hk.json",JSON.stringify(mj));
   }
   ret=[{
     col_type: "text_center_1",
