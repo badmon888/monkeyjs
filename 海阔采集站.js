@@ -287,13 +287,17 @@ function 处理采集网站url(url, tg) {
 
 function 显示网站列表(url) {
   if (!url) {
-    if(fileExist(localPath+"caiji.json")){
-      url=localPath+"caiji.json";
+    if(fileExist(localPath+"caiji_hk.json")){
+      url=localPath+"caiji_hk.json";
     }else{
       url=aliFile;
     }
   }
+  
   mj=JSON.parse(fetch(url));
+  if(!fileExist(localPath+"caiji_hk.json")){
+    write(localPath+"caiji_hk.json",JSON.stringify(mj));
+  }
   ret=[{
     col_type: "text_center_1",
     title: "【 现有采集网站列表 】",
