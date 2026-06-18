@@ -13,13 +13,18 @@ js:
  * 存在问题：
  *  1、m3u8去广告还没有完成
  *  2、推送到TVBOX为本地线路还没有完成
+ * 
+ * github地址：https://v4.gh-proxy.org/https://raw.githubusercontent.com/badmon888/monkeyjs/refs/heads/main/%E6%B5%B7%E9%98%94%E9%87%87%E9%9B%86%E7%AB%99.js
+ * 
  */
+
 const local = "file:///storage/emulated/0/";
 var localPath = local+"pictures/HKtvbox/";
 if(!fileExist(localPath)){
   localPath=local+"HKtvbox/"
 }
 aliFile = "https://aliyun-wb-abpb21pjek.oss-cn-shanghai.aliyuncs.com/fc/%E5%88%87%E7%89%87%E7%BD%91%E4%BF%9D%E5%AD%98_2025-10-31.json"
+githubfile="https://v4.gh-proxy.org/https://raw.githubusercontent.com/badmon888/monkeyjs/refs/heads/main/caiji.json"
 //网站列表接口,测试数据
 // 返回样式按钮
 function getcols() {
