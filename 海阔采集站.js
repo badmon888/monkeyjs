@@ -299,6 +299,11 @@ function 显示网站列表(url) {
   if(!fileExist(localPath+"caiji_hk.json")){
     writeFile(localPath+"caiji_hk.json",JSON.stringify(mj));
   }
+  if(!fileExist(localPath+"海阔采集站.js")){
+    file="https://v4.gh-proxy.org/https://raw.githubusercontent.com/badmon888/monkeyjs/refs/heads/main/%E6%B5%B7%E9%98%94%E9%87%87%E9%9B%86%E7%AB%99.js"
+    writeFile(localPath+"海阔采集站.js",fetch(file))
+  }
+
   ret=[{
     col_type: "text_center_1",
     title: "【 现有采集网站列表 】",
